@@ -6,16 +6,37 @@
     <Reference Include="System.Core" />
     <Reference Include="MonoGame.Framework" />
     <Reference Include="Phantom" />
+    <Reference Include="monotouch">
+      <Platforms>iOS</Platforms>
+    </Reference>
+    <Reference Include="OpenTK">
+      <Platforms>iOS</Platforms>
+    </Reference>
   </References>
   <Properties>
     <NoWarn>1591,0436</NoWarn>
   </Properties>
   <Files>
     <Compile Include="CakeGame.cs" />
-    <Compile Include="Program.cs" />
+
+    <Compile Include="MacOS/Program.cs">
+      <Link>Program.cs</Link>
+      <Platforms>MacOS</Platforms>
+    </Compile>
     <None Include="MacOS/Info.plist">
       <Link>Info.plist</Link>
       <Platforms>MacOS</Platforms>
     </None>
+
+
+    <Compile Include="iOS/Program.cs">
+      <Link>Program.cs</Link>
+      <Platforms>iOS</Platforms>
+    </Compile>
+    <None Include="iOS/Info.plist">
+      <Link>Info.plist</Link>
+      <Platforms>iOS</Platforms>
+    </None>
+
   </Files>
 </Project>
