@@ -31,3 +31,6 @@ publish
 *_i.c
 *_p.c
 *TemporaryKey.pfx
+
+Content/assets/.source
+.DS_Store
