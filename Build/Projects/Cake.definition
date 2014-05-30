@@ -19,6 +19,7 @@
   </Properties>
   <Files>
     <Compile Include="CakeGame.cs" />
+    <Compile Include="Foo.cs" />
     <Compile Include="Program.cs" />
     <None Include="iOS/Info.plist">
       <Link>Info.plist</Link>

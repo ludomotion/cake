@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Cake
 {
-    class Foo
+    public class Foo
     {
     }
 }
